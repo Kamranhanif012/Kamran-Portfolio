@@ -1,0 +1,67 @@
+:root{
+    --text-light-accent: #EF6D58;
+    --text-dark-accent: #EF6D58;
+    --text-dark: #391400;
+    --text-fark-gray: #391400;
+    --text-light-gray: #FFFFFF; /* 64percent and light */
+    --primary-font: 200;
+    --secondary-font: 600;
+    --primary-background: #28293E;
+}
+
+body{
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo h1{
+    margin: 0;
+    margin-left: 10px;
+
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--primary-background);
+    
+}
+
+.nav-logo img{
+    margin-left: 60px;
+    width: 40px;
+    height: 60px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-size: 13px;
+    font-weight: var(--primary-font);
+}
+
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+}
+
+.light-btn-secondary{
+    all: unset;
+    padding: 8px 25px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin-right: 60px;
+    font-size: 12px;
+     font-weight: var(--secondary-font);
+
+}

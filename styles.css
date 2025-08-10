@@ -16,6 +16,11 @@ body{
     color: #fff;
     margin: 0;
 }
+
+.nav-container{
+    position:relative;
+}
+
 .nav-logo{
     display: flex;
     align-items: center;
@@ -41,13 +46,18 @@ body{
     height: 60px;
 }
 
-.nav-links{
+.nav-links-container{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 80px;
     font-size: 13px;
     font-weight: var(--primary-font);
+}
+
+.nav-links{
+    color: var(--text-light-gray);
+    text-decoration: none;
 }
 
 .nav-links ul{
@@ -57,11 +67,61 @@ body{
 
 .light-btn-secondary{
     all: unset;
-    padding: 8px 25px;
-    border: 1px solid #fff;
+    cursor: pointer;
+    padding: 8px 20px;
+    border: 1px solid #9b9898;
     border-radius: 6px;
     margin-right: 60px;
-    font-size: 12px;
-     font-weight: var(--secondary-font);
+    font-size: 11px;
+    font-weight: var(--secondary-font);
 
+}
+
+  .drop-down-btn{
+    width: 15px;
+    height: 2px;
+    border-radius: 3px;
+    overflow: none;
+    background-color: #fff;
+    margin: 6px 0;
+
+}
+
+.drop-btn-container{
+    display: none;
+    margin-right: 60px;
+    border: 1px solid #9b9898;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle{
+    padding: 5px 10px;
+    transform: rotate(0deg);
+    transition: 0.8s;
+}
+
+.drop-links{
+    display: none;
+    background-color: var(--primary-background);
+    position: absolute;
+    padding-right: 26px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: var(--primary-font);
+}
+
+@media screen and (max-width: 600px){
+    .nav-links-container{
+        display: none;
+    }
+    .light-btn-secondary{
+        display: none;
+    }
+
+    .drop-btn-container{
+        display: block;
+    }
 }

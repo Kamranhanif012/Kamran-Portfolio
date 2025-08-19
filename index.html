@@ -1,131 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="nav-container">
-            <div class="nav-items">
-                <div class="nav-logo">
-                    <img src="/assets/Untitled.png" alt="Portfolio Logo">
-                    <h1>Portfolio</h1>
-                </div>
-                <div class="nav-links-container">
-                    <ul>
-                        <a class="nav-links" href="">Home</a>
-                    </ul>
-                    <ul>
-                        <a class="nav-links" href="">About</a>
-                    </ul>
-                    <ul>
-                       <a class="nav-links" href="">Project</a>
-                    </ul>
-                    <ul>
-                       <a class="nav-links" href="">Skills</a>
-                    </ul>
-                </div>
-                <div>
-                    <button class="light-btn-secondary">CONTACT</button>
-                </div>
-                 
-                <div id="drop-btn"  class="drop-btn-container">
-                    <div id="rotating" class="toggle">
-                        <div  class="drop-down-btn"></div>
-                        <div  class="drop-down-btn"></div>
-                        <div  class="drop-down-btn"></div>
-                    </div> 
-                    
-                     <div id="droped-links" class="drop-links">
-                      <ul>
-                        <a class="nav-links" href="">Home</a>
-                    </ul>
-                    <ul>
-                        <a class="nav-links" href="">About</a>
-                    </ul>
-                    <ul>
-                       <a class="nav-links" href="">Project</a>
-                    </ul>
-                    <ul>
-                       <a class="nav-links" href="">Skills</a>
-                    </ul>
-                </div>
-                </div>  
-            </div>         
-        </nav>
+      <nav class="nav-container">
+        <div class="nav-items">
+          <div class="nav-logo">
+            <img src="/assets/Untitled.png" alt="Portfolio Logo" />
+            <h1>Portfolio</h1>
+          </div>
+          <div class="nav-links-container">
+            <ul>
+              <a class="nav-links" href="">Home</a>
+            </ul>
+            <ul>
+              <a class="nav-links" href="">About</a>
+            </ul>
+            <ul>
+              <a class="nav-links" href="">Project</a>
+            </ul>
+            <ul>
+              <a class="nav-links" href="#skills-learned">Skills</a>
+            </ul>
+          </div>
+          <div>
+            <button class="light-btn-secondary">CONTACT</button>
+          </div>
+
+          <div id="drop-btn" class="drop-btn-container">
+            <div id="rotating" class="toggle">
+              <div class="drop-down-btn"></div>
+              <div class="drop-down-btn"></div>
+              <div class="drop-down-btn"></div>
+            </div>
+
+            <div id="droped-links" class="drop-links">
+              <ul>
+                <a class="nav-links" href="">Home</a>
+              </ul>
+              <ul>
+                <a class="nav-links" href="">About</a>
+              </ul>
+              <ul>
+                <a class="nav-links" href="">Project</a>
+              </ul>
+              <ul>
+                <a class="nav-links" href="">Skills</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="profile">
-            <div class="profile-img-box">
-                <img class="profile-img" src="assets/Adobe Express - file.png" alt="">
-            </div>
-            <div class="profile-attributes">
-                <p class="profile-field">SOFTWARE ENGINEER</p>
-                <h1>Muhammad Kamran <b>Hanif</b></h1>
-                <p class="profile-info">I build responsive web apps with HTML, CSS, JS, and React, 
-                    and am growing into full-stack development.
-                </p>
-                    <button class="profile-contact-btn">CONTACT ME</button>
-            </div>
-        </section>
+      <section class="profile">
+        <div class="profile-img-box">
+          <img
+            class="responsive-img"
+            src="assets/Adobe Express - file.png"
+            alt=""
+          />
+        </div>
+        <div class="profile-attributes">
+          <p class="field">SOFTWARE ENGINEER</p>
+          <h1 class="section-heading">Muhammad Kamran <b>Hanif</b></h1>
+          <p class="small-text">
+            I build responsive web apps with HTML, CSS, JS, and React, and am
+            growing into full-stack development.
+          </p>
+          <button class="primary-btn">CONTACT ME</button>
+        </div>
+      </section>
 
-        <section class="Skills-sec">
-            <div class="skills-heading-box">
-                <h1 class="skills-heading">
-                    Skills I’ve Learned
-                </h1>
+      <section id="skills-learned" class="Skills-sec">
+        <div class="skills-heading-box">
+          <h1 class="secondary-heading">Skills I’ve Learned</h1>
+        </div>
+
+        <div class="skills-grid-box">
+          <div class="skills-box">
+            <div class="skills-name-box">
+              <div class="skills-img-box">
+                <img
+                  class="skills-img"
+                  src="assets/programming-languages.png"
+                  alt=""
+                />
+              </div>
+              <span class="skills-name"> HTML & CSS </span>
             </div>
-
-            <div class="skills-grid-box">
-                <div class="skills-box">
-                    <div class="skills-name-box">
-                        <div class="skills-img-box">
-                            <img class="skills-img" src="assets/programming-languages.png" alt="">
-                        </div>
-                        <span class="skills-name">
-                            HTML & CSS
-                        </span>
-                    </div>
-                    <p class="skills-desc">
-                        Building clean, well-structured web pages with responsive layouts 
-                        and attractive styles.
-                    </p>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-name-box">
-                        <div class="skills-img-box">
-                            <img class="skills-img" src="assets/programming-languages.png" alt="">
-                        </div>
-                        <span class="skills-name">
-                            JavaScript
-                        </span>
-                    </div>
-                    <p class="skills-desc">
-                       Adding interactivity to my projects, from simple calculators to functional timers.
-                    </p>
-                </div>
+            <p class="skills-desc">
+              Building clean, well-structured web pages with responsive layouts
+              and attractive styles.
+            </p>
+          </div>
+          <div class="skills-box">
+            <div class="skills-name-box">
+              <div class="skills-img-box">
+                <img
+                  class="skills-img"
+                  src="assets/programming-languages.png"
+                  alt=""
+                />
+              </div>
+              <span class="skills-name"> JavaScript </span>
             </div>
-            <div class="working-skills-box">
-                <p class="working-skills">
-                    Curious about what I’m learning right now?
-                </p>
-                <button>Click here to explore.</button>
+            <p class="skills-desc">
+              Adding interactivity to my projects, from simple calculators to
+              functional timers.
+            </p>
+          </div>
+        </div>
+        <div class="working-skills-box">
+          <p class="working-skills">
+            Curious about what I’m learning right now?
+          </p>
+          <button>Click here to explore.</button>
+        </div>
+      </section>
 
+      <section class="project-box">
+        <div class="">
+          <p class="project-portfolio">PORTFOLIO</p>
+          <div class="my-project-box">
+            <h1 class="section-heading">My Projects</h1>
+
+            <div>
+              <button class="light-btn-secondary">EXPLORE MORE</button>
             </div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project-illustrator-box">
+            <div class="project-img-box">
+              <img
+                class="responsive-img"
+                src="assets/timer.jpg"
+                alt="timer app"
+              />
+            </div>
+            <h1>Timer</h1>
+          </div>
 
+          <div class="project-illustrator-box">
+            <div class="project-img-box">
+              <img
+                class="responsive-img"
+                src="assets/calculator.jpg"
+                alt="timer app"
+              />
+            </div>
+            <h1>Calculator</h1>
+          </div>
+        </div>
+      </section>
+      <section class="contact-me-box">
+        <div class="form-box">
+          <h1 class="secondary-heading">Get In Touch</h1>
 
-        </section>
+          <form action="/page.php" method="post"></form>
+          <input
+            class="forms"
+            id="email"
+            name="email"
+            class="contact-input"
+            placeholder="Enter your Email"
+            type="text"
+            required
+          />
+          <input
+            class="forms"
+            id="subject"
+            name="subject"
+            class="contact-input"
+            placeholder="Subject"
+            type="text"
+            required
+          />
+          <input
+            class="forms msg"
+            id="messsage"
+            name="message"
+            class="contact-input"
+            placeholder="Message"
+            type="text"
+            required
+          />
+          <input class="primary-btn" type="submit" value="SUBMIT NOW" />
+        </div>
+        <div class="info-box">
+          <div>
+            <p class="field">CONTACT</p>
+            <h1 class="section-heading">Contact Me</h1>
+            <p class="small-text">
+              I’m open to internships, freelance work, or exciting opportunities
+              in web development.
+            </p>
+          </div>
+          <div class="about-box">
+            <div class="skills-img-box">
+              <img class="skills-img" src="assets/call.png" alt="call icon" />
+            </div>
+            <p>+92 325 7062196</p>
+          </div>
+          <div class="about-box">
+            <div class="skills-img-box">
+              <img class="skills-img" src="assets/email.png" alt="call icon" />
+            </div>
+            <a
+              class="links"
+              href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRrlZZHXDjkNMrRPpVxrDqNlMDCvBSPtqqpgnLHzQHtmHskpSqhmfhKgzksrGmqltjgjzqb"
+              >kamranhanif012@gmail.com</a
+            >
+          </div>
+          <div class="about-box">
+            <div class="skills-img-box">
+              <img
+                class="skills-img"
+                src="assets/github_black_logo_icon_147128.png"
+                alt="call icon"
+              />
+            </div>
+            <a class="links" href="https://github.com/Kamranhanif012">Github</a>
+          </div>
+          <div class="about-box">
+            <div class="skills-img-box">
+              <img
+                class="skills-img"
+                src="assets/linkedin_3669739.png"
+                alt="call icon"
+              />
+            </div>
+            <a class="links" href="https://github.com/Kamranhanif012"
+              >Linkedin</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

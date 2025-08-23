@@ -22,20 +22,20 @@
           </div>
           <div class="nav-links-container">
             <ul>
-              <a class="nav-links" href="">Home</a>
+              <a class="nav-links" href="#profile">Home</a>
             </ul>
             <ul>
               <a class="nav-links" href="">About</a>
             </ul>
             <ul>
-              <a class="nav-links" href="">Project</a>
+              <a class="nav-links" href="#project-box">Project</a>
             </ul>
             <ul>
               <a class="nav-links" href="#skills-learned">Skills</a>
             </ul>
           </div>
           <div>
-            <button class="light-btn-secondary">CONTACT</button>
+            <button id="contact" class="light-btn-secondary">CONTACT</button>
           </div>
 
           <div id="drop-btn" class="drop-btn-container">
@@ -47,16 +47,16 @@
 
             <div id="droped-links" class="drop-links">
               <ul>
-                <a class="nav-links" href="">Home</a>
+                <a class="nav-links" href="#profile">Home</a>
               </ul>
               <ul>
                 <a class="nav-links" href="">About</a>
               </ul>
               <ul>
-                <a class="nav-links" href="">Project</a>
+                <a class="nav-links" href="#project-box">Project</a>
               </ul>
               <ul>
-                <a class="nav-links" href="">Skills</a>
+                <a class="nav-links" href="#skills-learned">Skills</a>
               </ul>
             </div>
           </div>
@@ -65,7 +65,7 @@
     </header>
 
     <main>
-      <section class="profile">
+      <section id="profile" class="profile">
         <div class="profile-img-box">
           <img
             class="responsive-img"
@@ -80,7 +80,7 @@
             I build responsive web apps with HTML, CSS, JS, and React, and am
             growing into full-stack development.
           </p>
-          <button class="primary-btn">CONTACT ME</button>
+          <button id="contact" class="primary-btn">CONTACT ME</button>
         </div>
       </section>
 
@@ -92,9 +92,9 @@
         <div class="skills-grid-box">
           <div class="skills-box">
             <div class="skills-name-box">
-              <div class="skills-img-box">
+              <div class="icon-img-box">
                 <img
-                  class="skills-img"
+                  class="icon-img"
                   src="assets/programming-languages.png"
                   alt=""
                 />
@@ -108,9 +108,9 @@
           </div>
           <div class="skills-box">
             <div class="skills-name-box">
-              <div class="skills-img-box">
+              <div class="icon-img-box">
                 <img
-                  class="skills-img"
+                  class="icon-img"
                   src="assets/programming-languages.png"
                   alt=""
                 />
@@ -127,11 +127,11 @@
           <p class="working-skills">
             Curious about what I’m learning right now?
           </p>
-          <button>Click here to explore.</button>
+          <a href="#skills-learning">Click here to explore.</a>
         </div>
       </section>
 
-      <section class="project-box">
+      <section id="project-box" class="project-box">
         <div class="">
           <p class="project-portfolio">PORTFOLIO</p>
           <div class="my-project-box">
@@ -166,7 +166,98 @@
           </div>
         </div>
       </section>
-      <section class="contact-me-box">
+
+      <section id="skills-learning" class="Skills-sec">
+        <div class="skills-heading-box">
+          <h1 class="secondary-heading">Skills I'm Working On</h1>
+        </div>
+        <div class="skills-grid-box">
+          <div class="skills-box">
+            <div class="skills-name-box">
+              <div class="icon-img-box">
+                <img
+                  class="icon-img"
+                  src="assets/atom.png"
+                  alt=""
+                />
+              </div>
+              <span class="skills-name"> React.js </span>
+            </div>
+            <p class="skills-desc">
+              Currently mastering React.js to develop dynamic and interactive user interfaces, 
+              while exploring hooks, state management, and reusable components.
+            </p>
+            
+          </div>
+          <div class="skills-box">
+            <div class="skills-name-box">
+              <div class="icon-img-box">
+                <img
+                  class="icon-img"
+                  src="assets//nodejs.png"
+                  alt=""
+                />
+              </div>
+              <span class="skills-name"> Node.js + Express.js </span>
+            </div>
+            <p class="skills-desc">
+              Learning backend development with Node.js and Express.js to build scalable, fast, and secure web applications.
+            </p>
+          </div>
+          <div class="skills-box">
+            <div class="skills-name-box">
+              <div class="icon-img-box">
+                <img
+                  class="icon-img"
+                  src="assets/pngegg.png"
+                  alt=""
+                />
+              </div>
+              <span class="skills-name"> MongoDB</span>
+            </div>
+            <p class="skills-desc">
+              Exploring MongoDB to manage and store data efficiently, 
+              with a focus on designing schemas and performing CRUD operations.
+            </p>
+          </div>
+        </div>
+        <div class="skills-grid-box">
+          <div class="skills-box">
+            <div class="skills-name-box">
+              <div class="icon-img-box">
+                <img
+                  class="icon-img"
+                  src="assets/programming-languages.png"
+                  alt=""
+                />
+              </div>
+              <span class="skills-name"> Git & GitHub </span>
+            </div>
+            <p class="skills-desc">
+              Practicing Git and GitHub to collaborate effectively, 
+              manage code versions, and contribute to projects in a professional way
+            </p>
+          </div>
+          <div class="skills-box">
+            <div class="skills-name-box">
+              <div class="icon-img-box">
+                <img
+                  class="icon-img"
+                  src="assets/programming-languages.png"
+                  alt=""
+                />
+              </div>
+              <span class="skills-name"> Problem Solving & DSA </span>
+            </div>
+            <p class="skills-desc">
+              Sharpening problem-solving skills and learning Data Structures & 
+              Algorithms to improve logic building and prepare for technical interviews.
+            </p>
+          </div>
+        
+      </section>
+
+      <section id="contact-me-box" class="contact-me-box">
         <div class="form-box">
           <h1 class="secondary-heading">Get In Touch</h1>
 
@@ -189,15 +280,12 @@
             type="text"
             required
           />
-          <input
-            class="forms msg"
+          <textarea 
+            placeholder="Message"
             id="messsage"
             name="message"
-            class="contact-input"
-            placeholder="Message"
-            type="text"
-            required
-          />
+            class="forms msg"
+            ></textarea>
           <input class="primary-btn" type="submit" value="SUBMIT NOW" />
         </div>
         <div class="info-box">
@@ -210,14 +298,14 @@
             </p>
           </div>
           <div class="about-box">
-            <div class="skills-img-box">
-              <img class="skills-img" src="assets/call.png" alt="call icon" />
+            <div class="icon-img-box">
+              <img class="icon-img" src="assets/call.png" alt="call icon" />
             </div>
             <p>+92 325 7062196</p>
           </div>
           <div class="about-box">
-            <div class="skills-img-box">
-              <img class="skills-img" src="assets/email.png" alt="call icon" />
+            <div class="icon-img-box">
+              <img class="icon-img" src="assets/email.png" alt="call icon" />
             </div>
             <a
               class="links"
@@ -226,9 +314,9 @@
             >
           </div>
           <div class="about-box">
-            <div class="skills-img-box">
+            <div class="icon-img-box">
               <img
-                class="skills-img"
+                class="icon-img"
                 src="assets/github_black_logo_icon_147128.png"
                 alt="call icon"
               />
@@ -236,14 +324,16 @@
             <a class="links" href="https://github.com/Kamranhanif012">Github</a>
           </div>
           <div class="about-box">
-            <div class="skills-img-box">
+            <div class="icon-img-box">
               <img
-                class="skills-img"
+                class="icon-img"
                 src="assets/linkedin_3669739.png"
                 alt="call icon"
               />
             </div>
-            <a class="links" href="https://github.com/Kamranhanif012"
+            <a
+              class="links"
+              href="https://www.linkedin.com/in/muhammad-kamran-hanif-37782b2ab/"
               >Linkedin</a
             >
           </div>

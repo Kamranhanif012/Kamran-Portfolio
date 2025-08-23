@@ -1,11 +1,12 @@
 const toggleBtn = document.getElementById("drop-btn");
 const toggleLines = document.getElementById("rotating");
 const dropLinks = document.getElementById("droped-links");
+const contactBtn = document.querySelectorAll("#contact")
+
 
 let rotated = false;
 
 toggleBtn.addEventListener("click", () => {
-  console.log("kamran");
   rotated
     ? (toggleLines.style.transform = "rotate(0deg)")
     : (toggleLines.style.transform = "rotate(90deg)");
@@ -19,3 +20,9 @@ toggleBtn.addEventListener("click", () => {
 
   rotated = !rotated;
 });
+
+contactBtn.forEach((btn)=> {
+  btn.addEventListener('click', ()=>{
+  window.location.href = "#contact-me-box";
+
+})} )

@@ -1,0 +1,67 @@
+.container{
+    height: 500px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-container {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused; /* <-- start paused */
+    rotate: -30deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+    border-radius: 80px;
+    background-image: linear-gradient(45deg, rgb(38, 0, 255), rgb(1, 219, 1));
+}
+
+.btn-container {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: absolute;
+    width: 120px;
+    height: 38px;
+    margin: 0 auto;
+    border-radius: 80px;
+}
+
+/* Hover parent -> animate child */
+.color-cont:hover .color-container {
+    animation-play-state: running;
+}
+
+/* Define rotation animation */
+@keyframes rotate {
+    0% { transform: rotate(-30deg); }
+    100% { transform: rotate(330deg); }
+}
+
+@keyframes rotate {
+    
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.color-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 43px;
+    overflow: hidden;
+    border-radius: 80px;
+}
